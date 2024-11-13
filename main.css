@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-image: url(/img/napoleon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    backdrop-filter: blur(3px);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 200px;
+}
+
+nav{
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    padding: 10px 20px 10px 0;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+nav li a.login{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+}
+
+section .texto1{
+    width: 500px;
+    padding: 120px 0 0 0;
+    font-size: 22px;
+    text-shadow: 10px 7px 5px black;
+}
+
+section h3{
+    color: white;
+    text-decoration: none;
+    padding: 40px 0;
+}
+
+section.contatos{
+    text-align: center;
+}
+
+.contatos img{
+    width: 30px;
+    padding: 10px;
+}
+
+section a,
+footer a{
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+
+
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+}
+
