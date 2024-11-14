@@ -4,9 +4,6 @@
 }
 
 body{
-    font-family: "Roboto", serif;
-    font-weight: 700;
-    font-style: normal;
     background-image: url(/img/napoleon.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -32,6 +29,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .logo img{
@@ -51,24 +52,63 @@ nav li{
     list-style: none;
 }
 
-nav li a{
-    padding: 10px 20px 10px 0;
+nav a{
+    padding: 10px 2px 10px 2px;
     text-decoration: none;
     color: white;
-    border-radius: 10px;
+    position: relative;
+    margin-left: 20px;
 }
+
+nav a::after{
+    content: " ";
+    
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+
 
 nav li a.login{
     padding: 10px 20px;
     background-color: white;
     color: black;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+nav li a.login:hover{
+    border-radius: 0px;
+}
+
+nav li a.login:hover::after{
+    display: none;
 }
 
 section .texto1{
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+
     width: 500px;
     padding: 120px 0 0 0;
     font-size: 22px;
     text-shadow: 10px 7px 5px black;
+    position: relative;
+    left: -120px;
+}
+
+.texto1 h1{
+    
 }
 
 section h3{
@@ -77,30 +117,59 @@ section h3{
     padding: 40px 0;
 }
 
+
+.dev a::after{
+    content: " ";
+    
+    width: 0%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.dev a:hover::after{
+    width: 100%;
+}
+
+
+
 section.contatos{
     text-align: center;
 }
 
 .contatos img{
-    width: 30px;
-    padding: 10px;
+    width: 20px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 section a,
 footer a{
-    font-weight: 400;
     color: white;
     text-decoration: none;
-    padding: 10px 0;
-
-
+    
+    
     font-family: "Alex Brush", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 25px;
+
 }
 
 footer{
     position: relative;
-    text-align: center;
+    top: 100px;
+}
+
+footer h3{
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    
+    font-size: 25px;
 }
 
