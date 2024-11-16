@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/galaxy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    
+}
+
+.container{
+    width: 300px;
+    margin: 10vw auto 0 auto;
+    text-align: center;
+    
+    color: white;
+    backdrop-filter: blur(5px);
+    position: relative;
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px rgba(117, 117, 117, 0.5);
+
+}
+
+
+.login{
+    text-shadow: black 0px 3px 5px;
+}
+
+.login > img{
+    width: 100%;    
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+form{
+    height: 300px;
+    padding-top: 5px;
+}
+
+h1{
+    padding: 10px 0;
+}
+
+input{
+    width: 90%;
+    margin: 10px 5%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+.mini_links{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px ;
+}
+
+.login .mini_links a{
+    color: white;
+    text-decoration: none;
+}
+
+#nova_conta{
+    position: relative;
+}
+
+#nova_conta::after{
+    content: " ";
+
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+#nova_conta:hover::after{
+    width: 100%;
+}
+
+
+
+
+button{
+    margin: 20px auto;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 1s ease-in-out;
+    background-image: linear-gradient(to top, black, rgb(63, 63, 63));
+}
+
+.login > form img{
+    width: 30px;
+}

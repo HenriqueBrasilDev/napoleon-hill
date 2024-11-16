@@ -4,12 +4,11 @@
 }
 
 body{
-    background-image: url(/img/napoleon.png);
+    background-image: url(./img/napoleon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    overflow: hidden;
     height: 100vh;
 
     display: flex;
@@ -24,18 +23,20 @@ body{
 }
 
 header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     font-family: "Roboto", serif;
     font-weight: 300;
     font-style: normal;
+    
     backdrop-filter: blur(3px);
     box-shadow: 0px 10px 20px black;
-    padding: 5px;
+    
+}
 
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
 
 .logo img{
@@ -102,9 +103,6 @@ nav li a.login:hover::after{
 
 
 
-
-
-
 section .texto1{
     width: 500px;
     padding: 120px 0 0 0;
@@ -164,6 +162,30 @@ section .texto1{
 
 
 
+section .texto2{
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    box-shadow: rgb(0, 0, 0) 0 0px 10px;
+}
+
+section .texto2 h1{
+    text-shadow: black 0 5px 5px;
+
+    font-family: "Alex Brush", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 35px;
+
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -174,7 +196,7 @@ section .texto1{
 
 footer{
     position: relative;
-    top: 100px;
+    padding-bottom: 10px;
 }
 
 footer .contatos{
