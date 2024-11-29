@@ -102,6 +102,9 @@ nav li a.login:hover::after{
 
 
 
+.apresentacao{
+    
+}
 
 section .texto1{
     width: 500px;
@@ -109,7 +112,7 @@ section .texto1{
     font-size: 25px;
     text-shadow: 10px 5px 5px rgb(0, 0, 0);
     position: relative;
-    left: -120px;
+    left: 120px;
 }
 
 .texto1 h1{
@@ -162,6 +165,7 @@ section .texto1{
 
 
 
+
 section .texto2{
     backdrop-filter: blur(7px);
     border-radius: 15px;
@@ -176,7 +180,7 @@ section .texto2 h1{
     font-style: normal;
     font-size: 35px;
 
-    padding: 50px;
+    padding: 100px 50px;
 }
 
 

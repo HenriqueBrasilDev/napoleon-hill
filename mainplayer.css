@@ -90,20 +90,22 @@ nav li a.login:hover::after{
 h1{
     font-size: 30px;
     padding: 50px 20px;
+    text-shadow: 0px 0px 10px black;
+
 }
 
 .questoes button{
     margin: 50px 20px;
     padding: 15px 30px;
-    border: none;
-    background-color: rgb(119, 119, 119);
+    border: solid 1px white;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
 
 .questoes button:hover{
-    background-image: linear-gradient(to bottom,  rgb(145, 145, 145), rgb(224, 224, 224));
+    background-image: linear-gradient( to bottom right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 0.438));
     text-shadow: 0px 2px 2px black;
 }
 
