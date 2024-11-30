@@ -29,7 +29,7 @@ header{
     
     backdrop-filter: blur(3px);
     box-shadow: 0px 10px 20px black;
-    
+    padding: 0 10px;
 }
 
 header .container{
@@ -68,7 +68,7 @@ nav a::after{
     content: " ";
     
     width: 0%;
-    height: 3px;
+    height: 2px;
     background-color: rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
@@ -84,14 +84,13 @@ nav a:hover::after{
 
 nav li a.login{
     padding: 10px 20px;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
+    color: white;
     transition: 0.5s ease-in-out;
+    border: solid 1px white;
 }
 
 nav li > a.login:hover{
-    border-radius: 0px;
+    background-image: linear-gradient( to bottom right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 0.747));
 }
 
 nav li a.login:hover::after{
@@ -103,17 +102,31 @@ nav li a.login:hover::after{
 
 
 .apresentacao{
-    
+    width: 500px;
+    overflow: hidden;
 }
 
 section .texto1{
     width: 500px;
+    display: none;
+
+
     padding: 120px 0 0 0;
     font-size: 25px;
     text-shadow: 10px 5px 5px rgb(0, 0, 0);
     position: relative;
-    left: 120px;
 }
+
+.slide.active{
+    display: block;
+}
+
+
+
+
+
+
+
 
 .texto1 h1{
     font-family: "Alex Brush", serif;
@@ -125,7 +138,7 @@ section .texto1{
     font-family: "Alex Brush", serif;
     font-weight: 300;
     font-style: normal;
-
+    
     color: white;
     text-decoration: none;
     padding: 40px 0;
@@ -136,8 +149,8 @@ section .texto1{
     font-family: "Alex Brush", serif;
     font-weight: 300;
     font-style: normal;
-
-
+    
+    
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -147,8 +160,8 @@ section .texto1{
 
 .contain_texto1 a::after{
     content: "";
-
-
+    
+    
     width: 0%;
     height: 1px;
     background-color: white;
@@ -160,7 +173,7 @@ section .texto1{
 
 .contain_texto1 a:hover::after{
     width: 100%;
-
+    
 }
 
 
@@ -170,11 +183,13 @@ section .texto2{
     backdrop-filter: blur(7px);
     border-radius: 15px;
     box-shadow: rgb(0, 0, 0) 0 0px 10px;
+    
+    display: none;
 }
 
 section .texto2 h1{
     text-shadow: black 0 5px 5px;
-
+    
     font-family: "Alex Brush", serif;
     font-weight: 300;
     font-style: normal;
