@@ -101,12 +101,13 @@ nav li a.login:hover::after{
 
 
 
-.apresentacao{
+.main{
     width: 500px;
     overflow: hidden;
+    transition: 0.5s ease-in-out;
 }
 
-section .texto1{
+section .slide{
     width: 500px;
     display: none;
 
@@ -115,9 +116,12 @@ section .texto1{
     font-size: 25px;
     text-shadow: 10px 5px 5px rgb(0, 0, 0);
     position: relative;
+    transition: 0.5s ease-in-out;
+
 }
 
 .slide.active{
+    transition: 0.5s ease-in-out;
     display: block;
 }
 
